@@ -19,6 +19,11 @@
 
 @interface UILabel (ESAdjustableLabel)
 
+
+- (CGRect)getNeededFrameToMaximumSize:(CGSize)maxSize
+                          minimumSize:(CGSize)minSize
+                      minimumFontSize:(int)minFontSize;
+
 // General method. If minSize is set to CGSizeZero then
 // it is ignored
 // =====================================================
