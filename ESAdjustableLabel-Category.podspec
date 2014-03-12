@@ -1,12 +1,13 @@
- Pod::Spec.new do |s|
-    s.name         = 'ESAdjustableLabel-Category'
-    s.version      = '0.0.1'
-    s.license      = 'MIT'
-    s.summary      = 'Adjusting the size of a UILabel is a pain in the back. This category provides a couple of simple methods to make this process less painful.'
-    s.homepage     = 'https://github.com/Moonlace/ESAdjustableLabel-Category'
-    s.author       = 'Edgarschmidt '
-    s.source       = { :git => 'https://github.com/Moonlace/ESAdjustableLabel-Category.git', :tag => 'v0.0.1' }
-    s.source_files = ['ESAdjustableLabel-Category/ESAdjustableLabel.{h,m}']
-    s.platform     = :ios, '5.0'
-    s.requires_arc = true
+Pod::Spec.new do |s|
+  s.name = 'ESAdjustableLabel-Category'
+  s.version = '0.0.1'
+  s.license = 'none specified'
+  s.summary = 'This category implements some basic methods to modify the dimensions of a given UILabel.'
+  s.homepage = 'https://github.com/edgarschmidt/ESAdjustableLabel-Category'
+  s.author = { 'Edgar Schmidt' => 'https://github.com/edgarschmidt' }
+  s.source = { :git => 'https://github.com/Moonlace/ESAdjustableLabel-Category.git', :commit => 'f9d32d091ba77b9942b7c1c13725b746317fe6e4' }
+  s.platform = :ios
+  s.source_files = 'ESAdjustableLabel/UILabel+ESAdjustableLabel.{h,m}'
+
+  s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
 end
